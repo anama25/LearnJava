@@ -1,0 +1,36 @@
+package javaapplication3;
+import javax.swing.JOptionPane;
+/**
+This program demonstrates using dialogs with
+JOptionPane.
+*/
+public class Restaurant
+{
+public static void main(String[] args)
+{
+inputString; //For reader's input
+int total; // The user's total bill.
+int taxAmount; //6.75 of the user's total bill
+int totalMeal; //Bill after tax has been added
+int tip; // 15 percent of the totalMeal
+int overall; // The total including tax and tip
+// Get the user's total bill.
+inputString =
+JOptionPane.showInputDialog("What is " +
+"the total bill? ");
+//Convert the input to an int.
+total = Integer.parseInt(inputString);
+// Calculate the tax amount.
+taxAmount = 6.75/100 * total;
+// Calculate the total meal after tax has been added.
+totalMeal = taxAmount + total
+//Calculate the tip
+tip = 15/100 * totalMeal
+// Calculate the entire bill.
+overall = totalMeal + tip;
+System.out.println("The taxed amount is" + taxAmount);
+System.out.println("The tip amount is" + tipAmount);
+System.out.println("The total bill is" + overall)
+System.exit(0);
+}
+}
